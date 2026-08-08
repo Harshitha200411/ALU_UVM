@@ -4,7 +4,7 @@ logic [`dw-1:0] opa;
 logic [`dw-1:0] opb;
 logic [`cw-1:0] cmd;
 logic [1:0] inp_valid;
-logic [`dw:0] res;
+	logic [`dw*2-1:0] res;
 logic ce, mode, cin, cout, oflow, g, e, l, err;
 
 clocking act_drv_cb @ (posedge clk);
