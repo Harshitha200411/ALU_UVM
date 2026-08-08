@@ -12,7 +12,7 @@ ALU_DESIGN duv (.OPA(itf.opa), .OPB(itf.opb), .CLK(itf.clk), .RST(itf.rst), .CE(
 
 initial begin
 	uvm_config_db #(virtual alu_if)::set(null, "*", "alu_if", itf);
-	run_test("alu_test");
+	run_test();
 end
 
 initial begin
