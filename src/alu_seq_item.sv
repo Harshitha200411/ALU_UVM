@@ -5,7 +5,7 @@ rand bit [`dw-1:0] opb;
 rand bit [`cw-1:0] cmd;
 rand bit [1:0] inp_valid;
 rand bit ce, mode, cin;
-bit [`dw:0] res;
+bit [`dw*2-1:0] res;
 bit cout, oflow, g, e, l, err;
 
 //constraint inp_valid_con { inp_valid == 3; }
