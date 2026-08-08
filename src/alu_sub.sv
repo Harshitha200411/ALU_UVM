@@ -18,10 +18,10 @@ alu_seq_item si;
  		bins low ={0};
  		bins high ={1};}
  	opa_cp : coverpoint si.opa {
- 		bins max={[0:256]};
+   bins max={[0:255]};
  		bins others=default; }
  	opb_cp : coverpoint si.opb {
- 		bins max={[0:256]};
+   bins max={[0:255]};
  		bins others=default; }
  endgroup
   function new(string name = "alu_sub",uvm_component parent); 		
