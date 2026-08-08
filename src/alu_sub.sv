@@ -23,18 +23,6 @@ alu_seq_item si;
  	opb_cp : coverpoint si.opb {
  		bins max={[0:256]};
  		bins others=default; }
- 	/*err_cp : coverpoint si.err {
- 		bins low={0};
- 		bins high={0};}
- 	cout_cp : coverpoint si.cout {
- 		bins low={0};
- 		bins high={1};}
- 	oflow_cp:coverpoint si.oflow {
- 		bins low ={0};
- 		bins high={1};}
- 	g_cp:coverpoint si.g;
- 	l_cp : coverpoint si.l;
- 	e_cp : coverpoint si.e;*/
  endgroup
   function new(string name = "alu_sub",uvm_component parent); 		
   	super.new(name,parent);
