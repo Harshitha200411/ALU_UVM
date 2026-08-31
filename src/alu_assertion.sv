@@ -52,13 +52,13 @@ module alu_assertion (
 
     assert property (
     @(posedge clk) disable iff (rst)
-    (!mode && !(cmd inside {14,15}))
+    (!mode && (cmd inside {14,15}))
     |=> err
     );
     
     assert property (
     @(posedge clk) disable iff (rst)
-    (mode && !(cmd inside {11,12,13,14,15}))
+    (mode && (cmd inside {11,12,13,14,15}))
     |=> err
     );
     
